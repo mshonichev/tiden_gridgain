@@ -1,0 +1,439 @@
+Configuration for node: D9CF11FA
+
+GridGain Ultimate 8.5.1-p8
+
+Java(TM) SE Runtime Environment 1.8.0_171-b11
+Vendor: Oracle Corporation
+
+JVM Parameters
+	-Dcom.sun.management.jmxremote:
+	-Dcom.sun.management.jmxremote.authenticate: false
+	-Dcom.sun.management.jmxremote.port: 49325
+	-Dcom.sun.management.jmxremote.ssl: false
+	-DIGNITE_HOME: C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8
+	-DIGNITE_PROG_NAME: ignite.bat
+	-DIGNITE_QUIET: false
+	-DIGNITE_SUCCESS_FILE: C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8\work\ignite_success_2dc4d41b-6e71-41f1-a2b2-6e9b8269eb70
+	-Xms1g:
+	-Xmx1g:
+	-XX:+AggressiveOpts:
+	-XX:MaxMetaspaceSize: 256m
+	JVM PID: 4244
+
+Common Attributes
+	ASCII Logo Disabled: false
+	Atomic Cache Mode: PARTITIONED
+	Atomic Number Of Backup Nodes: 1
+	Atomic Sequence Reservation Size: 1000
+	Authenticator: null
+	Client Mode: false
+	Daemon: false
+	Discovery Order Not Required: false
+	Discovery Startup Delay: 1m
+	Grid Logger: o.a.i.i.GridLoggerProxy
+	GridGain Home: C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8
+	Include Properties: null
+	License URL: null
+	Localhost: null
+	Marshaller: o.a.i.i.binary.BinaryMarshaller
+	MBean Server: com.sun.jmx.mbeanserver.JmxMBeanServer
+	Metrics Expire Time: Never
+	Metrics History Size: 10000
+	Metrics Log Frequency: 60000
+	Network Timeout: 5000
+	Node Restart Enabled: true
+	Program Name: ignite.bat
+	Quiet Mode: false
+	Remote JMX: true
+	Rolling Updates Enabled: false
+	Security Credentials: null
+	Shutdown Hook Disabled: false
+	Success Filename:
+	Transaction Concurrency: PESSIMISTIC
+	Transaction Isolation: REPEATABLE_READ
+	Transaction Log Cleanup Delay: 10000
+	Transaction Log Size: 0
+	Transaction Manager Factory: null
+	Transaction Timeout: 0
+	Transaction Use JTA: false
+	Update Notification Enabled: true
+
+Binary Configuration
+
+Data Storage Configuration
+	Always Erite Full Pages: false
+	Checkpoint Frequency: 180000
+	Checkpoint Threads: 4
+	Checkpoint Write Order: SEQUENTIAL
+	Concurrency Level: 0
+	Data Region Configurations:
+	Default Data Region Empty Pages Pool Size: 100
+	Default Data Region Eviction Mode: DISABLED
+	Default Data Region Eviction Threshold: 0.9
+	Default Data Region Initial size: 268435456
+	Default Data Region Maximum size: 3398733824
+	Default Data Region Metrics Enabled: false
+	Default Data Region Metrics Rate Time Interval: 60000
+	Default Data Region Metrics Sub Interval Count: 5
+	Default Data Region Name: default
+	Default Data Region Persistence Enabled: false
+	Default Data Region Swap Path: null
+	Enable WAL compaction: false
+	File IO Factory: o.a.i.i.processors.cache.persistence.file.AsyncFileIOFactory
+	Lock Wait Time: 10000
+	Metrics Enabled: false
+	Metrics Rate Time Interval: 60000
+	Metrics Sub Interval Count: 5
+	Page Size: 4096
+	Storage Path: null
+	System Region Initial Size: 41943040
+	System Region Maximum Size: 104857600
+	WAL Archive Path: db/wal/archive
+	WAL Auto Archive After Inactivity: -1
+	WAL Buffer Size: 16777216
+	WAL Flush Frequency: 2000
+	WAL Fsync Delay: 1000
+	WAL History Size: 20
+	WAL Mode: LOG_ONLY
+	WAL Path: db/wal
+	WAL Record Iterator Buffer Size: 67108864
+	WAL Segment Size: 67108864
+	WAL Segments: 10
+	WAL Thread Local Buffer Size: 131072
+	Write Throttling Enabled: false
+
+Discovery SPI: TcpDiscoverySpi
+	ackTimeout: 5000
+	addressResolver: null
+	Class Name: o.a.i.spi.discovery.tcp.TcpDiscoverySpi
+	clientReconnectDisabled: false
+	forceServerMode: false
+	ipFinder: o.a.i.spi.discovery.tcp.ipfinder.vm.TcpDiscoveryVmIpFinder
+	ipFinderCleanFrequency: 60000
+	joinTimeout: 0
+	localAddress: null
+	localPort: 47500
+	localPortRange: 100
+	maxAckTimeout: 600000
+	networkTimeout: 5000
+	reconnectCount: 10
+	reconnectDelay: 2000
+	socketTimeout: 5000
+	statisticsPrintFrequency: 0
+	threadPriority: 10
+	topHistorySize: 1000
+
+Communication SPI: TcpCommunicationSpi
+	ackSendThreshold: 32
+	Class Name: o.a.i.spi.communication.tcp.TcpCommunicationSpi
+	connectTimeout: 5000
+	directBuffer: true
+	directSendBuffer: false
+	filterReachableAddresses: false
+	idleConnectionTimeout: 600000
+	localAddress: null
+	localPort: 47100
+	localPortRange: 100
+	maxConnectTimeout: 600000
+	messageQueueLimit: 0
+	reconnectCount: 10
+	selectorsCount: 4
+	sharedMemoryPort: -1
+	socketReceiveBuffer: 32768
+	socketSendBuffer: 32768
+	socketWriteTimeout: 2000
+	tcpNoDelay: true
+	unacknowledgedMessagesBufferSize: 0
+
+Collision SPI: NoopCollisionSpi
+	Class Name: o.a.i.spi.collision.noop.NoopCollisionSpi
+
+Deployment SPI: LocalDeploymentSpi
+	Class Name: o.a.i.spi.deployment.local.LocalDeploymentSpi
+
+Event Storage SPI: NoopEventStorageSpi
+	Class Name: o.a.i.spi.eventstorage.NoopEventStorageSpi
+
+Checkpoint SPI: NoopCheckpointSpi
+	Class Name: o.a.i.spi.checkpoint.noop.NoopCheckpointSpi
+
+Failover SPI: AlwaysFailoverSpi
+	Class Name: o.a.i.spi.failover.always.AlwaysFailoverSpi
+	maximumFailoverAttempts: 5
+
+Load Balancing SPI: RoundRobinLoadBalancingSpi
+	Class Name: o.a.i.spi.loadbalancing.roundrobin.RoundRobinLoadBalancingSpi
+	perTask: false
+
+Indexing SPI: NoopIndexingSpi
+	Class Name: o.a.i.spi.indexing.noop.NoopIndexingSpi
+
+Client Connector Configuration
+	Host: null
+	Idle Timeout: 0
+	JDBC Enabled: true
+	Max Connection Cursors: 128
+	ODBC Enabled: true
+	Pool Size: 8
+	Port: 10800
+	Port Range: 100
+	Socket Receive Buffer Size: 0
+	Socket Send Buffer Size: 0
+	Ssl Client Auth: false
+	SSL Context Factory: null
+	SSL Enabled: false
+	TCP_NODELAY: true
+	Thin Client Enabled: true
+	Use Ignite SSL Context Factory: true
+
+Peer-to-Peer Configuration
+	Missed Resources Cache Size: 100
+	Peer Class Loading Enabled: false
+	Peer-to-Peer Loaded Packages: null
+
+Lifecycle Beans
+	Beans: null
+
+Executor Services
+	IGFS Thread Pool Size: 4
+	Management Thread Pool Size: 4
+	Peer-to-Peer Thread Pool Size: 2
+	Public Thread Pool Size: 8
+	Rebalance Thread Pool size: 1
+	REST Thread Pool Size: 8
+	SQl Processor Thread Pool Size: 8
+	System Thread Pool Size: 8
+
+Segmentation Configuration
+	All Resolvers Pass Required: true
+	Segmentation Check Frequency: 10000
+	Segmentation Policy: STOP
+	Segmentation Resolvers: null
+	Wait For Segmentation On Start: true
+
+Events Configuration
+	Included Event Types:
+
+REST Configuration
+	Jetty Host: null
+	Jetty Path: null
+	REST Enabled: true
+	TCP Host: null
+	TCP Port: 11211
+	TCP SSL Enabled: false
+
+User-Defined Node Attributes
+
+Environment Variables
+	=ExitCode: 00000000
+	ALLUSERSPROFILE: C:\ProgramData
+	APPDATA: C:\Users\gridgain\AppData\Roaming
+	CommonProgramFiles: C:\Program Files\Common Files
+	CommonProgramFiles(x86): C:\Program Files (x86)\Common Files
+	CommonProgramW6432: C:\Program Files\Common Files
+	COMPUTERNAME: QA-05
+	ComSpec: C:\Windows\system32\cmd.exe
+	CONFIG: C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8\examples\config\example-cache.xml
+	convertArgsCmd: "C:\Program Files\Java\jdk1.8.0_171\bin\java.exe" -cp "C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8\libs\*;C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8\libs\gridgain-ultimate\*;C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8\libs\ignite-indexing\*;C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8\libs\ignite-spring\*;C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8\libs\licenses\*" org.apache.ignite.startup.cmdline.CommandLineTransformer -v C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8\examples\config\example-cache.xml
+	CP: C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8\libs\*;C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8\libs\gridgain-ultimate\*;C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8\libs\ignite-indexing\*;C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8\libs\ignite-spring\*;C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8\libs\licenses\*
+	DEFAULT_CONFIG: config\default-config.xml
+	DriverData: C:\Windows\System32\Drivers\DriverData
+	ENABLE_ASSERTIONS: 0
+	FPS_BROWSER_APP_PROFILE_STRING: Internet Explorer
+	FPS_BROWSER_USER_PROFILE_STRING: Default
+	HOMEDRIVE: C:
+	HOMEPATH: \Users\gridgain
+	IGNITE_HOME: C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8
+	IGNITE_LIBS: C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8\libs\*;C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8\libs\gridgain-ultimate\*;C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8\libs\ignite-indexing\*;C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8\libs\ignite-spring\*;C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8\libs\licenses\*
+	INTERACTIVE: 0
+	JAVA_HOME: C:\Program Files\Java\jdk1.8.0_171
+	JMX_MON: -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=49325     -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false
+	JMX_PORT: 49325
+	JVM_OPTS: -Xms1g -Xmx1g -server -XX:+AggressiveOpts -XX:MaxMetaspaceSize=256m
+	LOCALAPPDATA: C:\Users\gridgain\AppData\Local
+	LOGONSERVER: \\QA-05
+	M2_HOME: C:\Program Files\maven
+	MAIN_CLASS: org.apache.ignite.startup.cmdline.CommandLineStartup
+	NO_JMX: 0
+	NO_PAUSE: 0
+	NUMBER_OF_PROCESSORS: 4
+	OneDrive: C:\Users\gridgain\OneDrive
+	OS: Windows_NT
+	Path: C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\maven\bin;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Users\gridgain\AppData\Local\Programs\Python\Python36-32\;C:\Users\gridgain\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\Users\gridgain\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\
+	PATHEXT: .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+	PROCESSOR_ARCHITECTURE: AMD64
+	PROCESSOR_IDENTIFIER: Intel64 Family 6 Model 142 Stepping 9, GenuineIntel
+	PROCESSOR_LEVEL: 6
+	PROCESSOR_REVISION: 8e09
+	PROG_NAME: ignite.bat
+	ProgramData: C:\ProgramData
+	ProgramFiles: C:\Program Files
+	ProgramFiles(x86): C:\Program Files (x86)
+	ProgramW6432: C:\Program Files
+	PROMPT: $P$G
+	PSModulePath: C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+	PUBLIC: C:\Users\Public
+	QUIET: -DIGNITE_QUIET=false
+	RANDOM_NUMBER: 2dc4d41b-6e71-41f1-a2b2-6e9b8269eb70
+	RANDOM_NUMBER_COMMAND: "C:\Program Files\Java\jdk1.8.0_171\bin\java.exe" -cp "C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8\libs\*;C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8\libs\gridgain-ultimate\*;C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8\libs\ignite-indexing\*;C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8\libs\ignite-spring\*;C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8\libs\licenses\*" org.apache.ignite.startup.cmdline.CommandLineRandomNumberGenerator
+	reformattedArgs: "INTERACTIVE=0" "QUIET=-DIGNITE_QUIET=false" "NO_PAUSE=0" "NO_JMX=0" "JVM_XOPTS=" "CONFIG=C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8\examples\config\example-cache.xml"
+	RESTART_SUCCESS_FILE: "C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8\work\ignite_success_2dc4d41b-6e71-41f1-a2b2-6e9b8269eb70"
+	RESTART_SUCCESS_OPT: -DIGNITE_SUCCESS_FILE="C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8\work\ignite_success_2dc4d41b-6e71-41f1-a2b2-6e9b8269eb70"
+	SCRIPTS_HOME: C:\Work\testtools\work\test-tools\gridgain-ultimate-fabric-8.5.1-p8norm\gridgain-ultimate-fabric-8.5.1-p8\bin
+	SESSIONNAME: Console
+	SystemDrive: C:
+	SystemRoot: C:\Windows
+	TEMP: C:\Users\gridgain\AppData\Local\Temp
+	TMP: C:\Users\gridgain\AppData\Local\Temp
+	USERDOMAIN: QA-05
+	USERDOMAIN_ROAMINGPROFILE: QA-05
+	USERNAME: gridgain
+	USERPROFILE: C:\Users\gridgain
+	windir: C:\Windows
+
+System Properties
+	awt.toolkit: sun.awt.windows.WToolkit
+	com.sun.management.jmxremote:
+	com.sun.management.jmxremote.authenticate: false
+	com.sun.management.jmxremote.port: 49325
+	com.sun.management.jmxremote.ssl: false
+	file.encoding: Cp1251
+	file.encoding.pkg: sun.io
+	file.separator: \
+	h2.objectCache: false
+	h2.objectCacheMaxPerElementSize: 0
+	h2.optimizeTwoEquals: false
+	h2.serializeJavaObject: false
+	http.strictPostRedirect: true
+	IGNITE_CONFIG_URL: file:
+	IGNITE_HOME:
+	IGNITE_PROG_NAME: ignite.bat
+	IGNITE_QUIET: false
+	IGNITE_SUCCESS_FILE:
+	java.awt.graphicsenv: sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob: sun.awt.windows.WPrinterJob
+	java.class.path:
+	java.class.version: 52.0
+	java.endorsed.dirs:
+	java.ext.dirs:
+	java.home:
+	java.io.tmpdir:
+	java.library.path:
+	java.rmi.server.randomIDs: true
+	java.runtime.name: Java(TM) SE Runtime Environment
+	java.runtime.version: 1.8.0_171-b11
+	java.specification.name: Java Platform API Specification
+	java.specification.vendor: Oracle Corporation
+	java.specification.version: 1.8
+	java.vendor: Oracle Corporation
+	java.vendor.url: http://java.oracle.com/
+	java.vendor.url.bug: http://bugreport.sun.com/bugreport/
+	java.version: 1.8.0_171
+	java.vm.info: mixed mode
+	java.vm.name: Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name: Java Virtual Machine Specification
+	java.vm.specification.vendor: Oracle Corporation
+	java.vm.specification.version: 1.8
+	java.vm.vendor: Oracle Corporation
+	java.vm.version: 25.171-b11
+	javax.xml.bind.context.factory: com.sun.xml.internal.bind.v2.ContextFactory
+	line.separator: <CR><NL>
+	os.arch: amd64
+	os.name: Windows 10
+	os.version: 10.0
+	path.separator: ;
+	sun.arch.data.model: 64
+	sun.boot.class.path:
+	sun.boot.library.path:
+	sun.cpu.endian: little
+	sun.cpu.isalist: amd64
+	sun.desktop: windows
+	sun.io.unicode.encoding: UnicodeLittle
+	sun.java.command:
+	sun.java.launcher: SUN_STANDARD
+	sun.jnu.encoding: Cp1251
+	sun.management.compiler: HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level:
+	sun.stderr.encoding: cp866
+	sun.stdout.encoding: cp866
+	user.country: RU
+	user.dir:
+	user.home:
+	user.language: ru
+	user.name: gridgain
+	user.script:
+	user.timezone: Europe/Moscow
+	user.variant:
+
+DR Sender Hub Configuration
+
+DR Receiver Hub Configuration
+
+Configuration for cache: default
+	Affinity Backups: 1
+	Affinity Exclude Neighbors: false
+	Affinity Function: o.a.i.cache.affinity.rendezvous.RendezvousAffinityFunction
+	Affinity Mapper: o.a.i.i.processors.cache.CacheDefaultBinaryAffinityKeyMapper
+	Affinity Partitions: 1024
+	Atomicity Mode: ATOMIC
+	Cache Interceptor: null
+	Concurrent Asynchronous Operations Number: 500
+	Copy On Read: true
+	Default Lock Timeout: 0
+	Dynamic Deployment ID: 73543e38461-2c1e1c43-315a-4494-a6bf-f4db9972c502
+	Eviction Filter: null
+	Eviction Policy Enabled: false
+	Eviction Policy Factory: null
+	Eviction Policy Max Size: null
+	Expiry Policy Factory Class Name: javax.cache.configuration.FactoryBuilder$SingletonFactory
+	Group: null
+	Invalidate: false
+	Listener Configurations: null
+	Load Previous Value: false
+	Loader Factory Class Name: null
+	Management Enabled: false
+	Maximum payload size for offheap indexes: -1
+	Memory Policy Name: null
+	Mode: PARTITIONED
+	Name: default
+	Near Cache Enabled: false
+	Near Eviction Policy Factory: null
+	Near Eviction Policy Max Size: null
+	Near Start Size: 0
+	Node Filter: o.a.i.configuration.CacheConfiguration$IgniteAllNodesPredicate
+	On-heap cache enabled: false
+	Partition Loss Policy: IGNORE
+	Query Entities:
+	Query Escaped Names: false
+	Query Execution Time Threshold: 3000
+	Query Indexed Types: null
+	Query Metrics History Size: 0
+	Query Parallelism: 1
+	Query SQL functions: null
+	Query SQL Schema: null
+	Read From Backup: true
+	Rebalance Batch Size: 524288
+	Rebalance Batches Count: 2
+	Rebalance Cache Order: 0
+	Rebalance Delay: 0
+	Rebalance Mode: ASYNC
+	Rebalance Timeout: 10000
+	Statistic Enabled: false
+	Store Class: null
+	Store Enabled: false
+	Store Factory Class: null
+	Store Keep Binary: false
+	Store Read Through: false
+	Store Write Coalescing: true
+	Store Write Through: false
+	System: false
+	Time Between Rebalance Messages: 0
+	Time To Live Eager Flag: true
+	Topology Validator: null
+	Write Synchronization Mode: PRIMARY_SYNC
+	Write-Behind Batch Size: 512
+	Write-Behind Enabled: false
+	Write-Behind Flush Size: 10240
+	Write-Behind Flush Threads Count: 1
+	Write-Behind Frequency: 5000
+	Writer Factory Class Name: null

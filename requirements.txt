@@ -1,0 +1,9 @@
+pluggy
+tiden
+py4j>=0.10.7
+
+# for graphs generation in tests and zabbix plugin
+#cython>0.28
+#pandas==0.20.3
+#matplotlib==2.0.2
+#numpy==1.13.1
