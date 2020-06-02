@@ -20,7 +20,7 @@ from random import randint
 from ..piclient.helper.cache_utils import IgniteCache
 from ..piclient.piclient import PiClient
 from ..util import print_blue, print_red, log_put, log_print
-from .singlegridzootescase import SingleGridZooTestCase
+from .singlegridzootestcase import SingleGridZooTestCase
 from time import sleep
 
 

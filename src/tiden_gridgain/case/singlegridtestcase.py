@@ -15,11 +15,9 @@
 # limitations under the License.
 
 import re
-from random import random
 
 from tiden.sshpool import SshPool
 from tiden.assertions import tiden_assert
-from tiden.dockermanager import DockerManager
 from tiden.case.generaltestcase import GeneralTestCase
 from tiden.ignite import Ignite
 from ..piclient.helper.class_utils import ModelTypes
@@ -35,7 +33,6 @@ from tiden.utilities.control_utility import ControlUtility
 from ..utilities.snapshot_utility import SnapshotUtility
 from os import path, mkdir
 
-import json
 import sys
 from threading import Thread
 
@@ -138,7 +135,7 @@ class SingleGridTestCase(GeneralTestCase):
     def log_cache_entries(self):
         cache_names = self.ignite.get_cache_names('cache_')
         entry_num = self.ignite.get_entries_num(cache_names)
-        log_print("Found %s entries in %s cache(s)" % (entry_num, len(cache_names)), 2)
+        log_print(f"Found {entry_num} entries in {len(cache_names)} cache(s)", 2)
 
     def wait_for_entries_num(self, cache_name_prefix, size, timeout, cond='=='):
         """
@@ -485,7 +482,7 @@ class SingleGridTestCase(GeneralTestCase):
         with PiClient(ignite, config_file, jvm_options=jvm_options, nodes_num=nodes_num, new_instance=new_instance) \
                 as piclient:
             cache_names = piclient.get_ignite().cacheNames()
-            log_print("Loading %s values per cache into %s caches" % (end_key - start_key, cache_names.size()))
+            log_print(f"Loading {end_key - start_key} values per cache into {cache_names.size()} caches")
 
             async_operations = []
             for cache_name in cache_names.toArray():
@@ -526,7 +523,7 @@ class SingleGridTestCase(GeneralTestCase):
 
         with PiClient(ignite, self.get_client_config(), jvm_options=jvm_options, nodes_num=nodes_num) as piclient:
             cache_names = piclient.get_ignite().cacheNames()
-            log_print("Loading %s values per cache into %s caches" % (end_key - start_key, cache_names.size()))
+            log_print(f"Loading {end_key - start_key} values per cache into {cache_names.size()} caches")
 
             async_operations = []
             for cache_name in cache_names.toArray():
@@ -566,7 +563,7 @@ class SingleGridTestCase(GeneralTestCase):
 
         with PiClient(self.ignite, config_file, jvm_options=jvm_options) as piclient:
             cache_names = piclient.get_ignite().cacheNames()
-            log_print("Loading %s values per cache into %s caches" % (end_key - start_key, cache_names.size()))
+            log_print(f"Loading {end_key - start_key} values per cache into {cache_names.size()} caches")
 
             async_operations = []
             for cache_name in cache_names.toArray():
