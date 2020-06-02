@@ -1,3 +1,19 @@
+#!/usr/bin/env python3
+#
+# Copyright 2017-2020 GridGain Systems.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
 import traceback
 from collections import OrderedDict
 from concurrent.futures.thread import ThreadPoolExecutor
@@ -43,7 +59,6 @@ class TransactionalLoading:
             raise Exception()
 
     All this code evaluated inside AsyncOperations, so it's (cores/2) threads with (1000/delay) operations/second
-
 
     To tune loading LoadingProfile class exists.
 
@@ -573,3 +588,4 @@ class LoadingUtils:
     @staticmethod
     def custom_event(tx_loading, event_name=''):
         tx_loading.metrics_thread.add_custom_event(event_name)
+

@@ -2,6 +2,6 @@ include pyproject.toml
 include LICENSE.txt
 include CHANGES.md
 include README.md
-recursive-include docs *
+#recursive-include docs *
 recursive-include bin *
 include build.sh

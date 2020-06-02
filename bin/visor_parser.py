@@ -1,4 +1,19 @@
 #!/usr/bin/env python3
+#
+# Copyright 2017-2020 GridGain Systems.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
 # VisorExport parser help
 # Run: visor_parser.py --config_path=path_1 --out_dir=path_2
 #       where: path_1 - path to VisorDump.cfg
@@ -30,10 +45,12 @@ object_count = 0
 stack_class_name = list()
 stack_cache_name = list()
 
+
 class OptionParserWithBooleanOptions(OptionParser):
     def add_boolean(self, dest, **kwargs):
         self.add_option('--%s' % dest, dest=dest, action='store_true', **kwargs)
         self.add_option('--no-%s' % dest, dest=dest, action='store_false', **kwargs)
+
 
 def parse_args():
     global options
@@ -74,6 +91,7 @@ def parse_args():
         exit(-1)
 
     print("Parser Options: " + str(options))
+
 
 def prepare_work():
     global config_lines
@@ -421,7 +439,6 @@ def main():
     generate_config()
     generate_class_plus_json()
     pack()
-
 
 # Main
 if __name__ == '__main__':

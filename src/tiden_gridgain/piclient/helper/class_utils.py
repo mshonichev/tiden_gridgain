@@ -1,3 +1,19 @@
+#!/usr/bin/env python3
+#
+# Copyright 2017-2020 GridGain Systems.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
 import random
 
 from ..piclient import get_gateway
@@ -33,7 +49,6 @@ class ModelTypes(Enum):
 
     KEY_ALL_TYPES_INDEXED = 'org.apache.ignite.piclient.model.keys.AllTypesIndexed'
     KEY_ALL_TYPES_COMPLEX_INDEX = 'org.apache.ignite.piclient.model.keys.AllTypesComplexIndex'
-
 
     @classmethod
     def random(cls):
@@ -80,10 +95,11 @@ def create_java_map(gateway=None):
 def create_java_set(gateway=None):
     return get_gateway(gateway).jvm.java.util.HashSet()
 
-
 # Wrapped AllTypes constructor
+
 def create_all_types(long_value, string_value=None, gateway=None):
     if not string_value:
         string_value = str(long_value)
 
     return get_gateway(gateway).jvm.org.apache.ignite.piclient.model.values.AllTypes(long_value, string_value)
+
