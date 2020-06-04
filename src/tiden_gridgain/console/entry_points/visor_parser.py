@@ -15,7 +15,7 @@
 # limitations under the License.
 
 # VisorExport parser help
-# Run: visor_parser.py --config_path=path_1 --out_dir=path_2
+# Run: tiden visor-parser --config_path=path_1 --out_dir=path_2
 #       where: path_1 - path to VisorDump.cfg
 #              path_2 - path to generate artifact
 #       by default (can change by console key)
@@ -434,12 +434,15 @@ def pack():
 
 
 def main():
+    """
+    Prepare GridGain caches configuration xml from GridGain Visor dump txt
+    """
     parse_args()
     prepare_work()
     generate_config()
     generate_class_plus_json()
     pack()
 
-# Main
+
 if __name__ == '__main__':
     main()

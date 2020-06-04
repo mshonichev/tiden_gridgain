@@ -14,7 +14,8 @@ rm -rf build
 rm -rf dist
 
 # remove remnants of previous `setup.py develop`
-for script_name in `ls -1 $SCRIPT_PATH/bin/*.py`; do
+for script_name in `ls -1 $SCRIPT_PATH/src/console/entry_points/*.py`; do
+  if [ "$script_name" = "__init__.py" ]; then continue; fi
   for bin_path in /usr/local/bin /usr/bin ~/.local/bin; do
     if [ -f $bin_path/$script_name ]; then
       sudo rm -f $bin_path/$script_name

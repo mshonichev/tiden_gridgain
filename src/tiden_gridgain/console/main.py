@@ -14,23 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from tiden import hookimpl
-
-
-@hookimpl
-def tiden_get_applications_path():
-    return ["tiden_gridgain.apps."]
-
-
-@hookimpl
-def tiden_get_plugins_path():
-    from os.path import dirname, abspath, join
-    from os import getcwd
-
-    return [join(dirname(abspath(__file__)), "plugins")]
-
-
-@hookimpl
-def tiden_get_entry_points():
-    from .console.main import allowed_commands
-    return allowed_commands
+allowed_commands = {
+    'visor-parser': 'tiden_gridgain.console.entry_points.visor_parser',
+    'merge-reports': 'tiden_gridgain.console.entry_points.merge_yaml_reports',
+    'prepare-apache-ignite-builds': 'tiden_gridgain.console.entry_points.prepare_apache_ignite_builds',
+}

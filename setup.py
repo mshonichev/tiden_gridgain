@@ -33,21 +33,16 @@ if not exists('requirements.txt'):
 with open('requirements.txt', 'r') as fd:
     requirements = [req.strip() for req in fd.readlines() if not req.strip().startswith('#')]
 
-scripts = [join('bin', script) for script in listdir(join(dirname(__file__), 'bin')) if
-           isfile(join(dirname(__file__), 'bin', script)) and script.endswith('.py')]
-
 setup(
     version=version,
     platforms=["any"],
     keywords="testing gridgain",
     license="apache2.0",
-    url="http://github.com/ggprivate/tiden",
+    url="http://github.com/ggprivate/tiden_gridgain_pkg",
     package_dir={'': 'src'},
     packages=find_packages(where='src'),
-    scripts=scripts,
     python_requires='>=3.7, <4',
     install_requires=requirements,
     entry_points={"tiden": ["tiden_gridgain = tiden_gridgain.tidenhooks"]},
-#    py_modules
 )
 
