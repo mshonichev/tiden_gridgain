@@ -19,7 +19,7 @@ import re
 from tiden.sshpool import SshPool
 from tiden.assertions import tiden_assert
 from tiden.case.generaltestcase import GeneralTestCase
-from tiden.ignite import Ignite
+from tiden.apps.ignite import Ignite
 from ..piclient.helper.class_utils import ModelTypes
 from ..piclient.helper.operation_utils import create_streamer_operation, create_async_operation, \
     create_checksum_operation, create_sum_operation, \
