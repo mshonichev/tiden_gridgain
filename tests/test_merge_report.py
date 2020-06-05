@@ -26,7 +26,7 @@ from tiden.util import load_yaml, save_yaml
 ])
 
 def test_merge_reports_simple_merge(test_file_name_index, tmpdir):
-    from tiden.console.entry_points import merge_yaml_reports as merge_reports
+    from tiden_gridgain.console.entry_points import merge_yaml_reports as merge_reports
 
     working_directory = join(dirname(__file__), 'res', 'merge_reports')
     output_directory = str(tmpdir)
@@ -39,9 +39,10 @@ def test_merge_reports_simple_merge(test_file_name_index, tmpdir):
     save_yaml(expected_result_report, exp)
     testargs = [
         "prog",
+        "--output",
+        actual_result_report,
         previous_report,
         current_report,
-        actual_result_report,
     ]
     with patch.object(sys, 'argv', testargs):
         merge_reports.main()

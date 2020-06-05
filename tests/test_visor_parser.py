@@ -28,7 +28,7 @@ import pytest
 ])
 
 def test_visor_parser(test_file_name, class_count):
-    import visor_parser
+    from tiden_gridgain.console.entry_points import visor_parser
     working_directory = join(dirname(__file__), 'res', 'visor_parser')
     print(join(working_directory, '%s_in.txt' % test_file_name))
     testargs = [
@@ -69,7 +69,7 @@ def test_visor_parser(test_file_name, class_count):
 
 
 def test_visor_parser_anonymous_caches():
-    import visor_parser
+    from tiden_gridgain.console.entry_points import visor_parser
     test_file_name = "visor_parser_test_empty_model"
 
     working_directory = join(dirname(__file__), 'res', 'visor_parser')

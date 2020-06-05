@@ -23,7 +23,6 @@ from os import cpu_count
 import pytest
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'bin')))
 
 
 def check_runtests_protocol(module_name, short_name, _config=None):

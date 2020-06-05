@@ -20,6 +20,7 @@ from re import search
 import argparse
 from tiden.util import log_print
 
+
 def load_yaml(yaml_path):
     data = {}
     with open(yaml_path, 'r') as f:
@@ -100,10 +101,7 @@ def main():
         log_print('ERROR: Must provide at least two reports', color='red')
         sys.exit(1)
 
-    print(repr(args.input))
-    print(repr(args.output))
-
-    previous_report = args.input[1]
+    previous_report = args.input[0]
     previous = {}
     result = {}
     try:

@@ -18,4 +18,6 @@ allowed_commands = {
     'visor-parser': 'tiden_gridgain.console.entry_points.visor_parser',
     'merge-reports': 'tiden_gridgain.console.entry_points.merge_yaml_reports',
     'prepare-apache-ignite-builds': 'tiden_gridgain.console.entry_points.prepare_apache_ignite_builds',
+    'ec-report': 'tiden_gridgain.console.entry_points.ec_report',
+    'get-gridgain-artifacts': 'tiden_gridgain.console.entry_points.get_gridgain_artifacts',
 }
