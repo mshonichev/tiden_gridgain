@@ -1,4 +1,4 @@
-# Tiden Gridgain 0.0.1
+# Tiden Gridgain 0.0.2
 
 ## 1. What is Tiden GridGain?
 
